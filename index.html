@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img{
+            margin-left: 750px;
+            margin-right: 750px;
+            margin-top: 17vh;
+            height: 130px;
+            position: absolute; /* Ensure precise positioning */
+        }
+        body{
+            height:auto;
+            background-color:rgb(24, 56, 54);
+        }
+        .header-container{
+        height:60vh;
+        }
+        h1 {
+          text-align:center;
+          font-size: 10vh;
+          background: linear-gradient(to right, #30CFD0, #c43ad6);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          
+        }
+      .container1,.container2,.container3{
+        height:75vh;
+        width:50%;
+        font-size:6vh;
+      }
+      .container2{
+        float:right;
+      }
+      .container3{
+        margin-top: 75vh;
+      }
+      .inner-text{
+        margin-top:38vh;
+        font-weight: bold;
+        color:white;
+        display: inline;
+        border-bottom: 3px solid #f9dd94;
+      }
+      .subtext1,.subtext2,.subtext3{
+        font-weight:5px;
+      }
+      .subtext1{
+        color:rgba(255, 48, 48, 0.61);
+      }
+      .subtext2{
+        color:orangered;
+      }
+      .subtext3{
+        color:yellow;
+      }
+      .bottom-text{
+        font-size: 30px;
+        color:#30CFD0;
+      }
+
+
+
+    </style>
+    
+  </head>
+  <body>
+    <div class="header-container">
+      <h1>HEADER</h1>
+        <!-- Use it like any other HTML element -->
+        <img class="img" src="rocket.svg">
+    </div>
+    <div class="container1">
+      <p class="inner-text">Astonishing<span class="subtext1">   Apple</span></p>
+      <p class="bottom-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Soluta molestiae non iusto obcaecati nulla? Beatae quisquam facilis qui excepturi 
+        labore quis modi sint cumque id vel. Vero earum ratione magnam.
+      </p>
+    </div>
+    <div class="container2">
+      <p class="inner-text">Osum<span class="subtext2">   Orange</span></p>
+      <p class="bottom-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Perspiciatis quidem ducimus deleniti ab quibusdam quis eaque, reprehenderit deserunt 
+        illum expedita repellendus dolorum modi eos placeat reiciendis asperiores, vitae officiis. Esse.
+      </p>
+    </div>
+    <div class="container3">
+      <p class="inner-text">Bombastic<span class="subtext3">   Banana</span></p>
+      <p class="bottom-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Totam, dolorem quibusdam hic ratione dicta ab reiciendis cupiditate fuga harum dolorum? 
+        Eaque accusamus blanditiis autem, nihil rem explicabo repudiandae pariatur excepturi!
+      </p>
+    </div>
+
+    <!-- Include GSAP library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <!-- Include ScrollTrigger plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <!-- Your custom script -->
+    <script src="script.js"></script>
+    <!-- Import the component -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+  </body>
+</html>
